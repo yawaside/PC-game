@@ -1,0 +1,53 @@
+// Персонажи: подписи в диалогах, портреты и внешний вид в мире.
+export const NPC_INFO = {
+  narr: { name: 'Рассказчик', face: 'narr', bar: 'linear-gradient(90deg,#222,#666)' },
+  hero: { name: 'Шорткат', title: 'ярлык', face: 'hero' },
+  klara: { name: 'Клара', title: 'Антивирус (не отвечает)', face: 'klara', bar: 'linear-gradient(90deg,#7a5a08,#e8b82a)' },
+  clippy: { name: 'Скрепыш', title: 'Помощник', face: 'clippy' },
+  calc: { name: 'Калькулятор', title: 'торговец', face: 'calc' },
+  notepad: { name: 'Блокнот', title: 'доска заданий', face: 'notepad' },
+  taskman: { name: 'Диспетчер задач', title: 'процесс: очень занят', face: 'taskman' },
+  tray: { name: 'Трей', title: 'часовщик', face: 'tray' },
+  helper: { name: 'Помощник.exe', title: 'подписан цифровой подписью', face: 'trojan', bar: 'linear-gradient(90deg,#5a3a10,#c08a40)' },
+  trojan: { name: 'Троян Конь', title: 'истинная форма', face: 'trojan2', bar: 'linear-gradient(90deg,#400,#c22)' },
+  ransom: { name: 'Ransomware-Лорд', title: 'бывший «Super Office 97»', face: 'ransom', bar: 'linear-gradient(90deg,#500,#d33)' },
+  loser: { name: 'Потеряшка', title: 'файл без расширения', face: 'folder' },
+  recycler: { name: 'Мусорщик', title: 'вторсырьё', face: 'folder' },
+  cleaner: { name: 'Очистка диска', title: 'санитарная служба', face: 'taskman' },
+  prisoner: { name: 'Узник', title: 'процесс в карцере', face: 'soldier' },
+  commandant: { name: 'Комендант', title: 'автозагрузчик', face: 'soldier', bar: 'linear-gradient(90deg,#2a3a10,#7a8a3a)' },
+  regkeeper: { name: 'Хранитель ключей', title: 'HKEY_LOCAL_MACHINE', face: 'hacker' },
+  sapper: { name: 'Сапёр', title: 'старая игра', face: 'folder' },
+  solitaire: { name: 'Косынка', title: 'старая игра', face: 'folder' },
+  ghost: { name: 'Призрак игры', title: 'удалённый', face: 'ghost' },
+  router: { name: 'Маршрутизатор', title: 'пакеты не теряем', face: 'calc' },
+  admiral: { name: 'Адмирал Троллей', title: 'пират-хакер', face: 'hacker', bar: 'linear-gradient(90deg,#102010,#2a8a3a)' },
+  elder: { name: 'Старейшина драйверов', title: 'версия 0.1', face: 'ghost' },
+  update: { name: 'Великое Обновление', title: 'просто делаю свою работу', face: 'update', bar: 'linear-gradient(90deg,#1a4a9a,#6aa8ff)' },
+  hydra: { name: 'CryptoMiner-Гидра', title: 'майнит, пока вы читаете', face: 'hacker' },
+  bsod: { name: 'BSOD', title: 'критическая ошибка', face: 'update', bar: 'linear-gradient(90deg,#00007a,#0000cc)' },
+  cloud: { name: 'Облако', title: 'облачное хранилище', face: 'update' },
+};
+
+/**
+ * Внешний вид NPC в мире. body — основной цвет, acc — акцент, shape — заготовка модели.
+ */
+export const NPC_LOOK = {
+  klara: { body: 0xe8b82a, acc: 0xfff3c4, shape: 'shield', scale: 1.15 },
+  clippy: { body: 0x9aa0ac, acc: 0xffffff, shape: 'clip', scale: 1.0 },
+  calc: { body: 0x9aa0a8, acc: 0xb7e3a0, shape: 'calc', scale: 1.15 },
+  notepad: { body: 0xf7e679, acc: 0x2a4d9c, shape: 'pad', scale: 1.2 },
+  taskman: { body: 0x1b2f5e, acc: 0x3ab26a, shape: 'win', scale: 1.15 },
+  tray: { body: 0x2a2a44, acc: 0x5cff8a, shape: 'clock', scale: 1.1 },
+  helper: { body: 0xa06c36, acc: 0xffe07a, shape: 'horse', scale: 1.2 },
+  loser: { body: 0xdddddd, acc: 0x888888, shape: 'file', scale: 0.95 },
+  recycler: { body: 0x3a9a55, acc: 0xd8ffe3, shape: 'bin', scale: 1.1 },
+  cleaner: { body: 0x3a7acb, acc: 0xffffff, shape: 'broom', scale: 1.1 },
+  prisoner: { body: 0x7d8a5a, acc: 0xffb066, shape: 'soldier', scale: 1.0 },
+  regkeeper: { body: 0x4a7bff, acc: 0xffd23f, shape: 'cube', scale: 1.2 },
+  sapper: { body: 0xc0c0c0, acc: 0xd93025, shape: 'mine', scale: 1.0 },
+  solitaire: { body: 0xf4f4f4, acc: 0xd93025, shape: 'card', scale: 1.0 },
+  router: { body: 0x2a2a3a, acc: 0x39ff6a, shape: 'router', scale: 1.15 },
+  elder: { body: 0xe8e0c8, acc: 0x7a6a3a, shape: 'chip', scale: 1.3 },
+  tray2: { body: 0x2a2a44, acc: 0x5cff8a, shape: 'clock', scale: 1.0 },
+};
